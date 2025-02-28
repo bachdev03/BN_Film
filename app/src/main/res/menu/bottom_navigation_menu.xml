@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Mục Phim -->
+    <item
+        android:id="@+id/nav_movies"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="Phim"
+        android:enabled="true" />
+
+    <!-- Mục Bản thân -->
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@android:drawable/ic_menu_info_details"
+        android:title="Bản thân"
+        android:enabled="true" />
+</menu>
