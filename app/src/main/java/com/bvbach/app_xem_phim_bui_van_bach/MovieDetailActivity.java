@@ -39,7 +39,7 @@ public class MovieDetailActivity extends AppCompatActivity {
         String posterUrl = "https://image.tmdb.org/t/p/w500" + posterPath; // Dựng lại URL của poster
         Glide.with(this)
                 .load(posterUrl)
-                .placeholder(R.drawable.lion2)  // Ảnh mặc định khi chưa load xong
+                .placeholder(R.drawable.load)  // Ảnh mặc định khi chưa load xong
                 .into(moviePoster);
         Log.d("PosterUrl", posterUrl);
     }

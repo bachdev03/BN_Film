@@ -54,8 +54,17 @@ public class MainActivity extends AppCompatActivity implements TextureView.Surfa
         });
 
         registerButton.setOnClickListener(view -> {
-            // Xử lý đăng ký
+            Intent intent = new Intent(MainActivity.this, RegisterActivity.class);
+            startActivity(intent);
         });
+
+        Button changePasswordButton = findViewById(R.id.changePasswordButton);
+        changePasswordButton.setOnClickListener(view -> {
+            Intent intent = new Intent(MainActivity.this, ChangePasswordActivity.class);
+            startActivity(intent);
+        });
+
+
     }
 
     @Override
@@ -82,6 +91,8 @@ public class MainActivity extends AppCompatActivity implements TextureView.Surfa
         }
         return false;
     }
+
+
 
     @Override
     public void onSurfaceTextureUpdated(SurfaceTexture surface) {}
